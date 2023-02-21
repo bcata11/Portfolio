@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <title>Portofoliu</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('dLsg6MG7Na0iFPCEQ');
+        })();
+    </script>
+
+
+</head>
+<body>
+    <!-- header -->
+     <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Barbu Catalin</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class="uil uil-estate nav_icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="uil uil-user nav_icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="uil uil-file-alt nav_icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#services" class="nav_link">
+                            <i class="uil uil-briefcase-alt nav_icon"></i> Services
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#portfolio" class="nav_link">
+                            <i class="uil uil-scenery nav_icon"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact-form" class="nav_link">
+                            <i class="uil uil-message nav_icon"></i> Contact me
+                        </a>
+                    </li>
+                    
+                </ul>
+                <i class="uil uil-times nav_close" id="nav-close"></i>
+            </div>
+
+            <div class="nav_btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+
+        </nav>
+     </header>   
+
+     <!-- main-->
+     <main class="main">
+        <!--home-->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                        <a href="https://www.linkedin.com/in/alexandru-cătălin-barbu-a43008192/" target="_blank" class="home_social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/bcata11" target="_blank" class="home_social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <!-- adauga dribble-->
+                    </div>
+
+                    <div class="home_img">
+                        <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                
+                                <image class="home_blob-img" x="30" y="-30" href="poze/IMG_4667-removebg-preview.png"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home_data">
+                        <h1 class="home_title">Hi, I am Catalin</h1>
+                        <h3 class="home_subtitle">Self-taught developer. Frontend and full stack developer</h3>
+                        <p class="home_description">My journey begins back in january 2022. Intrested in web development, web3, blockchain, AI</p>
+                        <a href="#contact-form" class="button button--flex">
+                            Contact me <i class="uil uil-message button_icon"></i> 
+                        </a>
+                    </div>
+
+
+                </div>
+                <div class="home_scroll">
+                    <a href="#about" class="home_scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                        <span class="home_scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home_scroll-arrow"></i>
+
+                    </a>
+                </div>
+            </div>
+        </section>
+<!--------------- ABOUT------------>
+        <section class="about_section" id="about">
+            <h2 class="section_title">About Me</h2>
+            <span class="section_subtitle">My introduction</span>
+
+            <div class="about_container container grid">
+                <img src="poze/1649697482142.jfif" alt="" class="about_img">
+                <div class="about_data">
+                    <p class="about_description">Higly-motivated self-taught programmer. I worked with a diverse range of technology, about 1 year experience</p>
+
+                    <div class="about_info">
+                        
+                            <div class="detalii">
+                                <span class="abinti">1</span>
+                                <span class="abinna">Year<br>experience</span>
+                            </div>
+                            <div class="detalii">
+                                <span class="abinti">2</span>
+                                <span class="abinna">Freelancing<br>projects</span>
+                            </div>
+                            <!-- <div class="detalii">
+                                <span class="abinti">08+</span>
+                                <span class="abinna">Years<br>experience</span>
+                            </div> -->
+
+                    </div>
+                    <div class="abbut">
+                        <a download="" href="pdfs/CV-Alexandru-Cătălin Barbu16_02.pdf" class="button button--flex">
+                            Download CV<i class="uil uil-download-alt button_icon"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<!---------------------SKILLS---------->
+        <section class="skills_section" id="skills">
+            <h2 class="section_title">Skills</h2>
+            <span class="section_subtitle">My technical level</span>
+
+            <div class="skills_container container grid">
+                <div>
+                    <!--1-->
+                    <div class="skills_content sopen">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Front end</h1>
+                                <span class="skills_subtitle">About 1 year</span>
+                            </div>
+                            <i class="uil uil-angle-down skarrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+
+                            <div class="skills_data">
+                                <div class="sktitles">
+                                    <h3 class="skills_name">HTML</h3>
+                                    <span class="skills_number">90%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skp shtml"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="sktitles">
+                                    <h3 class="skills_name">CSS</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skp scss"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="sktitles">
+                                    <h3 class="skills_name">JavaScript</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skp sjs"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="sktitles">
+                                    <h3 class="skills_name">React</h3>
+                                    <span class="skills_number">90%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skp sreact"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="sktitles">
+                                    <h3 class="skills_name">Jest</h3>
+                                    <span class="skills_number">10%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skp sjest"></span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!----2------>
+                    <div class="skills_content sclose">
+
+                        <div class="skills_header">
+                            <i class="uil uil-server-network skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Backend end</h1>
+                                <span class="skills_subtitle">About 4 months</span>
+                            </div>
+                            <i class="uil uil-angle-down skarrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+
+                            <div class="skills_data">
+                                <div class="sktitles">
+                                    <h3 class="skills_name">Phyton</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skp spython"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="sktitles">
+                                    <h3 class="skills_name">SQL</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skp ssql"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="sktitles">
+                                    <h3 class="skills_name">NodeJS</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skp snode"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----3------>
+                    <div class="skills_content sclose">
+                        <div class="skills_header">
+                            <i class="uil uil-code-branch skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Developer</h1>
+                                <span class="skills_subtitle">About 1 year</span>
+                            </div>
+                            <i class="uil uil-angle-down skarrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+
+                            <div class="skills_data">
+                                <div class="sktitles">
+                                    <h3 class="skills_name">C</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skp sc"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="sktitles">
+                                    <h3 class="skills_name">Python</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skp spyth"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="sktitles">
+                                    <h3 class="skills_name">JavaScript</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skp skjs"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="sktitles">
+                                    <h3 class="skills_name">Git</h3>
+                                    <span class="skills_number">20%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skp sgit"></span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<!--------------Qualifiactions--------------->
+        <section class="qualisection">
+            <h2 class="section_title">Qualification</h2>
+            <span class="section_subtitle">My personal journey</span>
+
+            <div class="qualificationcont container">
+                <div class="qualitabs">
+                    <div class="qualibutton button--flex qualiactive" data-target="#education">
+                        <i class="uil uil-graduation-cap qualiicon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualibutton button--flex" data-target="#work">
+                        <i class="uil uil-bag-alt qualiicon"></i>
+                        Work
+                    </div>
+                </div>
+                
+                <div class="qualisections">
+                    <!-------------Q 1 ---------->
+                    <div class="qualicontent qualiactive" data-content id="education">
+                        <!------1------>
+                        <div class="qualidata">
+                            <div>
+                                <h3 class="qualititle">Computer Science</h3>
+                                <span class="qualisubtitle">Cs50x-HarvardX</span>
+                                <div class="qualicalendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Jule 2022 - December 2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualirounder"></span>
+                                <span class="qualiline"></span>
+                            </div>
+
+                        </div>
+                        <!------2------>
+                        <div class="qualidata">
+                            <div></div>
+
+                            <div>
+                                <span class="qualirounder"></span>
+                                <span class="qualiline"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualititle">Full stack developer career path</h3>
+                                <span class="qualisubtitle">Codecademy</span>
+                                <div class="qualicalendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                     September 2022 - on going
+                                </div>
+                            </div>
+                        </div>
+                        <!------3------>
+                        <div class="qualidata">
+                            <div>
+                                <h3 class="qualititle">Learn C</h3>
+                                <span class="qualisubtitle">Codecademy</span>
+                                <div class="qualicalendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    September 2022 - October 2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualirounder"></span>
+                                <span class="qualiline"></span>
+                            </div>
+
+                        </div>
+                        <!------2------>
+                        <div class="qualidata">
+                            <div></div>
+
+                            <div>
+                                <span class="qualirounder"></span>
+                                <!--<span class="qualiline"></span>-->
+                            </div>
+
+                            <div>
+                                <h3 class="qualititle">Learn C++</h3>
+                                <span class="qualisubtitle">Codecademy</span>
+                                <div class="qualicalendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                     November 2022- on going
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-------------Q 2 ---------->
+                    <div class="qualicontent" data-content id="work">
+                        <!------1------>
+                        <div class="qualidata">
+                            <div>
+                                <h3 class="qualititle">IPSF Hackaton</h3>
+                                <span class="qualisubtitle">IPSF</span>
+                                <div class="qualicalendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    July 2021- August 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualirounder"></span>
+                                <span class="qualiline"></span>
+                            </div>
+                            
+
+                        </div>
+
+                        <!------2------>
+                        <div class="qualidata">
+                            <div></div>
+
+                            <div>
+                                <span class="qualirounder"></span>
+                                <span class="qualiline"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualititle">Freelancing</h3>
+                                <span class="qualisubtitle"></span>
+                                <div class="qualicalendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Started october 2022 
+                                </div>
+                            </div>
+                            
+                            
+                            
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!--------------Services--------------->
+        <section class="servsection" id="services">
+            <h2 class="section_title">Services</h2>
+            <span class="section_subtitle">What I offer</span>
+
+            <div class="servcontainer container grid">
+                <!-------S1------->
+                <div class="servcontent">
+                    <div>
+                        <i class="uil uil-web-grid servicesicon"></i>
+                        <h3 class="sertitle">Ui/Ux <br> Designer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link servbutton">
+                        View more
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+                    
+                    <div class="servmodal">
+                        <div class="servmodalcont">
+                            <h4 class="servmosaltitle">Ui/Ux <br> Designer</h4>
+                            <i class="uil uil-times servmodalclose"></i>
+
+                            <ul class="servmodalserv grid">
+                                <li class="servmodalservice">
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>I develop the user interface.</p>
+                                </li>
+                                <li class="servmodalservice">
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>I create ux element interactions</p>
+                                </li>
+                                <li class="servmodalservice">
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>I position your company brand</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                 <!-------S2------->
+                 <div class="servcontent">
+                    <div>
+                        <i class="uil uil-arrow servicesicon"></i>
+                        <h3 class="sertitle">Frontend <br> Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link servbutton">
+                        View more
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+                    
+                    <div class="servmodal">
+                        <div class="servmodalcont">
+                            <h4 class="servmosaltitle">Frontend <br> Developer</h4>
+                            <i class="uil uil-times servmodalclose"></i>
+
+                            <ul class="servmodalserv grid">
+                                <li class="servmodalservice">
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>I develop the user interface.</p>
+                                </li>
+                                <li class="servmodalservice">
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>I create ux element interactions</p>
+                                </li>
+                                <li class="servmodalservice">
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>I position your company brand</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<!--------------Portfolio--------------->
+        <section class="portfoliosection" id="portfolio">
+            <h2 class="section_title">Portfolio</h2>
+            <span class="section_subtitle">Most recent work</span>
+
+            <div class="portcontainer container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!------P1------->
+                    <div class="portcont grid swiper-slide">
+                        <img src="poze/cinvest.png" alt="" class="portimg">
+                        <div class="portdata">
+                            <h3 class="porttitle">Trading platform</h3>
+                            <p class="portdesc">This is my cs50x final project. Cinvest trading platform allows you to trade shares from all popular markets such as USA, UK, Germany and more. You can see the charts, the history of your trades, add or withdraw money any time you want.</p>
+                            <a href="https://www.youtube.com/watch?v=EJvpgvHU-38" target="_blank"  class="button button--flex button--small portbutton">
+                                Demo
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!------P2------->
+                    <div class="portcont grid swiper-slide">
+                        <img src="poze/huqass.png" alt="" class="portimg">
+                        <div class="portdata">
+                            <h3 class="porttitle">Modern website</h3>
+                            <p class="portdesc">Landing site for a local business. Here you can get the finest shisha in town</p>
+                            <a href="" class="button button--flex button--small portbutton">
+                                Demo
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!------P3------->
+                    <div class="portcont grid swiper-slide">
+                        <img src="poze/jaming.png" alt="" class="portimg">
+                        <div class="portdata">
+                            <h3 class="porttitle">Spotify playlist app</h3>
+                            <p class="portdesc">A web app where you can create spotify playlists</p>
+                            <a href="https://jaming-cata.surge.sh/" target="_blank" class="button button--flex button--small portbutton">
+                                Demo
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!------P4------->
+                    <div class="portcont grid swiper-slide">
+                        <img src="poze/budgetcalc.png" alt="" class="portimg">
+                        <div class="portdata">
+                            <h3 class="porttitle">Budget calculator web app</h3>
+                            <p class="portdesc">A web app where you can calculate your monthly budget</p>
+                            <a href="https://github.com/bcata11/Budget-calculator" target="_blank" class="button button--flex button--small portbutton">
+                                Demo
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!------P5------->
+                    <div class="portcont grid swiper-slide">
+                        <img src="poze/petlover.png" alt="" class="portimg">
+                        <div class="portdata">
+                            <h3 class="porttitle">Pet adoption web app</h3>
+                            <p class="portdesc">A Codecademy web app where you can adopt pets. We needed to fix the routes in the app.</p>
+                            <a href="https://github.com/bcata11/Petlover-codecademy/" target="_blank" class="button button--flex button--small portbutton">
+                                Demo
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!------P6------->
+                    <div class="portcont grid swiper-slide">
+                        <img src="poze/coffeeshop.png" alt="" class="portimg">
+                        <div class="portdata">
+                            <h3 class="porttitle">Coffee Shop Landing page</h3>
+                            <p class="portdesc">A simple web-site from Codecademy built only with HTML and CSS</p>
+                            <a href="https://github.com/bcata11/Coffee-Shop-Landing-page" target="_blank" class="button button--flex button--small portbutton">
+                                Demo
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                
+
+                <!--arrows and pagination-->
+                <div class="swiper-button-next swipper-portfolio-icon">
+                    <!--<i class="uil uil-angle-right-b swiper-portfolio-icon"></i>-->
+                </div>
+                <div class="swiper-button-prev swipper-portfolio-icon">
+                    <!--<i class="uil uil-angle-left-b swiper-portfolio-icon"></i>-->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+<!------ --=== === PROJECT IN MIND =====--> 
+        <section class="project_section">
+            <div class="project_bg">
+                <div class="project_container container grid">
+                    <div class="project_data">
+                        <h2 class="project_title">You have a new project</h2>
+                        <p class="project_description">Contact me now and get a 30% discount on your new project.</p>
+                        <a href="#contact-form" class="button button--flex button--white">
+                            Contact me
+                            <i class="uil uil-message project_icon button_icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="poze/7566-removebg-preview.png" alt="" class="projectimg">
+                </div>
+            </div>
+        </section>
+<!---------------CONTACT------------------>
+        <section class="contactsection" id="contact-form">
+            <h2 class="section_title">Contact Me</h2>
+            <span class="section_subtitle">Get in touch</span>
+
+            <div class="contactcont container grid">
+                <div>
+
+                    <div class="contactinfo">
+                        <i class="uil uil-phone contacticon"></i>
+                        <div>
+                            <h3 class="contacttitle">Call me</h3>
+                            <span class="contactsubtit">0733944048</span>
+                        </div>
+                    </div>
+
+                    <div class="contactinfo">
+                        <i class="uil uil-envelope contacticon"></i>
+                        <div>
+                            <h3 class="contacttitle">Email</h3>
+                            <span class="contactsubtit">catalinbar73@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contactinfo">
+                        <i class="uil uil-map-marker contacticon"></i>
+                        <div>
+                            <h3 class="contacttitle">Location</h3>
+                            <span class="contactsubtit">Craiova- Romania</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contactform grid">
+                    <div class="contactinputs grid">
+                        <div class="contactcontent">
+                            <label class="contactlab">Name</label>
+                            <input type="text" id="name" name="user_name" class="contactinput">
+                        </div>
+
+                        <div class="contactcontent">
+                            <label  class="contactlab">Email</label>
+                            <input type="email" id="email" name="user_email" class="contactinput">
+                        </div>
+                    </div>
+                    <div class="contactcontent">
+                        <label  class="contactlab" name="Subject">Project</label>
+                        <input type="text" id="subject" class="contactinput">
+                    </div>
+                    
+                    <div class="contactcontent">
+                        <label  class="contactlab">Message</label>
+                        <textarea name="message" id="message" cols="0" rows="7" class="contactinput"></textarea>
+                    </div>
+                    
+                    <div>
+                        <a href="#" class="button button--flex" value="Send" onclick="sendMail()">
+                            Send Message
+                            <i class="uil uil-message button_icon"></i>
+                        </a>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+     </main>
+     <!--= FOOTER =-->
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Catalin Barbu</h1>
+                    <span class="footer_subtitle">Web developer</span>
+                </div>
+
+                <ul class="footer_links">
+                    <li>
+                        <a href="#services" class="footer_link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer_link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer_link">Contactme</a>
+                    </li>
+                </ul>
+
+                <div class="footer_socials">
+                    <a href="https://www.facebook.com/cata.smiley.52/" target="blank" class="footer_social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/cata_thc/" target="blank" class="footer_social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scrollup">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
+
+     <script src="swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
