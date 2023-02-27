@@ -277,9 +277,9 @@ img{
     margin-bottom: var(--mb-2);
 }
 
-.home_scroll{
- /* display: none;*/   
-}
+/* .home_scroll{
+ display: none;   
+} */
 
 .home_scroll-button{
     color: --first-color;
@@ -376,7 +376,7 @@ img{
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .abinti{
@@ -490,7 +490,15 @@ img{
 }
 
 .sjs{
-    width: 30%;
+    width: 70%;
+}
+
+.sreact{
+    width: 90%;
+}
+
+.sjest{
+    width: 10%;
 }
 
 .spython{
@@ -502,7 +510,7 @@ img{
 }
 
 .snode{
-    width: 0%;
+    width: 70%;
 }
 .sc{
     width: 70%;
@@ -511,7 +519,11 @@ img{
     width: 50%;
 }
 .skjs{
-    width: 60%;
+    width: 80%;
+}
+
+.sgit{
+    width: 20%;
 }
 
 
@@ -604,6 +616,9 @@ img{
 
 
 /* -------------- Services ------------------*/
+.servsection{
+    margin-top: 3rem;
+}
 
 .servcontainer{
     gap: 1.5rem;
@@ -706,6 +721,10 @@ img{
 }
 
 /*------------------PORTFOLIO-----------------------*/
+.portfoliosection{
+    margin-bottom: 3rem;
+}
+
 .portcontainer{
     overflow: initial;
 }
@@ -1006,6 +1025,10 @@ body.dark-theme{
         width: 200px;
     }
 
+    .about_info {
+        justify-content: space-evenly;
+    }
+
 }
 
 /*medium*/
@@ -1038,6 +1061,10 @@ body.dark-theme{
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
+    }
+
+    .about_info {
+        justify-content: space-evenly;
     }
 }
 
@@ -1127,7 +1154,7 @@ body.dark-theme{
         text-align: initial;
     }
     .about_info{
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .detalii{
