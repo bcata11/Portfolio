@@ -428,6 +428,7 @@ img {
     align-items: center;
     margin-bottom: 2rem;
     cursor: pointer;
+    border-bottom: 1px solid #ccc;
 }
 
 .skills_icon,
@@ -527,15 +528,15 @@ img {
 
 .qualitabs {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: var(--mb-2);
 }
 
 .qualibutton {
-    font-size: var(--h3-font-size);
+        font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     cursor: pointer;
-}
+    }
 
 .qualibutton:hover {
     color: var(--first-color);
@@ -594,6 +595,9 @@ img {
 
 .qualibutton.qualiactive {
     color: var(--first-color);
+    border-bottom: 1px solid var(--first-color);
+    width: 11rem;
+    padding: 0.5rem;
 }
 
 
@@ -705,6 +709,7 @@ img {
 /*------------------PORTFOLIO-----------------------*/
 .portfoliosection {
     margin-bottom: 3rem;
+    height: 30rem;
 }
 
 .portcontainer {
@@ -712,11 +717,11 @@ img {
 }
 
 .portcont {
-    padding: 0 3rem;
+    padding: 0 5rem;
 }
 
 .portimg {
-    width: 265px;
+    width: 15rem;
     border-radius: .5rem;
     justify-self: center;
 }
@@ -736,6 +741,9 @@ img {
 
 .swiper-pagination-bullets {
     bottom: -2.5rem;
+}
+.swipper-portfolio-icon{
+    color: var(--first-color);
 }
 
 .swiper-pagination-bullet {
